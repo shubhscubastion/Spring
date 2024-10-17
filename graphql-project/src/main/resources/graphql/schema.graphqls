@@ -16,6 +16,11 @@ type Book {
   pages: Int
 }
 
+type Author{
+  id:ID!
+  name:String
+}
+
 input BookInput{
     title:String
     desc:String

@@ -1,5 +1,5 @@
-type Mutation{
-    createBook(book:BookInput):Book
+type Mutation {
+  createBook(book: BookInput): Book
 }
 
 type Query {
@@ -16,15 +16,15 @@ type Book {
   pages: Int
 }
 
-type Author{
-  id:ID!
-  name:String
+type Author {
+  id: ID!
+  name: String!
 }
 
-input BookInput{
-    title:String
-    desc:String
-    author:String
-    price:Float
-    pages:Int
+input BookInput {
+  title: String
+  desc: String
+  author: String
+  price: Float
+  pages: Int
 }
